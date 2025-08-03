@@ -1,6 +1,6 @@
 using System.Diagnostics;
+using Domain.Commons;
 using Microsoft.AspNetCore.Mvc;
-using StudyPortal.Models;
 
 namespace StudyPortal.Controllers;
 
@@ -21,6 +21,6 @@ public class HomeController(ILogger<HomeController> logger) : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new Error ( "Error", ErrorType.BadRequest ));
     }
 }

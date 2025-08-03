@@ -1,0 +1,19 @@
+﻿@model MainCardView
+
+@{
+    ViewData["Title"] = "Cards";
+}
+
+<div>
+    @foreach (var card in Model.Cards)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title">@card.Word</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">@card.Translation</p>
+            </div>
+        </div>
+    }
+</div>
