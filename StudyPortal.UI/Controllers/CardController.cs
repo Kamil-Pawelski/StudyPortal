@@ -1,7 +1,7 @@
 ﻿using Domain.Entities.Cards;
 using Microsoft.AspNetCore.Mvc;
 
-namespace StudyPortal.Views.Cards
+namespace StudyPortal.UI.Controllers
 {
     public class CardsController : Controller
     {

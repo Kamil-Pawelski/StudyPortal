@@ -2,7 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach(var section in model.Sections){
+    <div class="tile-section">
+        <h2 class="section-title">FISZKI</h2>
+        <div class="tiles">
+            @foreach (var tile in Model)
+            {
+                <a href="@tile.Url" class="tile">
+                    @tile.Title
+                </a>
+            }
+        </div>
+    </div>
+
+}

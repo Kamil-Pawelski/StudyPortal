@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 10px 0;
-    background-color: #343a40;
+    background-color: #044382;
     justify-content: center;
 }
 
@@ -13,6 +13,7 @@ ul {
     padding: 5px;
     margin: 0;
     font-size: 24px;
+
     li {
         a {
             color: white;
@@ -20,7 +21,8 @@ ul {
             border-radius: 4px;
 
             &:hover {
-                background-color: #495057;
+                background-color: #004382;
+                color: black !important;
             }
         }
     }

@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Abstractions\Repositories\" />
     <Folder Include="Modules\Cards\" />
-    <Folder Include="Modules\" />
   </ItemGroup>
 
 </Project>

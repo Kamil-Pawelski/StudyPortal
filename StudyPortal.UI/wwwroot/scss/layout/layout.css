@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 10px 0;
-  background-color: #343a40;
+  background-color: #044382;
   justify-content: center;
 }
 
@@ -20,5 +20,6 @@ ul li a {
   border-radius: 4px;
 }
 ul li a:hover {
-  background-color: #495057;
+  background-color: #004382;
+  color: black !important;
 }
